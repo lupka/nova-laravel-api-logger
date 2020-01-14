@@ -25,3 +25,11 @@ public function tools()
     ];
 }
 ```
+
+If you want to restrict who can see the logs (a common use case for me has been restricting this to admins/developers), use the `canSee` method when adding the tool to restrict by email address (or any other criteria you have set up).
+
+```php
+(new NovaLaravelApiLogger)->canSee(function ($request) {
+    return in_array($request->user()->email, ['alex@alexchalupka.com']);
+}),
+```
