@@ -1,4 +1,4 @@
-# Nova Admin Panel for lupka/laravel-api-logger package
+# Nova Admin Panel for `lupka/laravel-api-logger` package
 
 ## Installation
 
@@ -14,7 +14,9 @@ If you haven't done the setup for the `lupka/laravel-api-logger` package, you'll
 
 ```php
 use Lupka\NovaLaravelApiLogger\NovaLaravelApiLogger;
+
 ...
+
 public function tools()
 {
     return [
