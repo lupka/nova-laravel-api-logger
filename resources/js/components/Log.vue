@@ -38,7 +38,10 @@
                 <div class="w-1/4 py-4">
                     <h4 class="font-normal text-80">User</h4>
                 </div>
-                <div class="w-3/4 py-4">
+                <div class="w-3/4 py-4" v-if="log.user">
+                    <p class="text-90">{{ log.user.email }}, ID: {{ log.user.id }}</p>
+                </div>
+                <div class="w-3/4 py-4" v-else>
                     <p class="text-90">{{ log.user_id }}</p>
                 </div>
             </div>

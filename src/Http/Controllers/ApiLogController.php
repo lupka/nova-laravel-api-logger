@@ -16,6 +16,6 @@ class ApiLogController extends Controller
 
     public function show($id)
     {
-        return ApiLog::findOrFail($id);
+        return ApiLog::with('user')->findOrFail($id);
     }
 }
